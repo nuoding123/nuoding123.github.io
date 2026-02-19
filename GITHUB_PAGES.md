@@ -5,7 +5,7 @@ This repository is configured for GitHub Pages deployment.
 ## Deployment Status
 
 - **Source**: `main` branch, `/docs` folder
-- **URL**: https://hsph-bst236-2026.github.io/homework-1-nuoding123/
+- **URL**: https://nuoding123.github.io/
 
 ## Manual Configuration Steps
 
@@ -13,7 +13,7 @@ If the Pages setting is not visible in the GitHub web interface, follow these st
 
 ### Option 1: Contact Repository Owner
 Since this is an organization repository, the organization owner or administrator needs to:
-1. Go to: https://github.com/hsph-bst236-2026/homework-1-nuoding123
+1. Go to: `https://github.com/nuoding123/nuoding123.github.io/settings/pages`
 2. Click Settings → Pages
 3. Set Source to: Deploy from a branch
 4. Select Branch: main
@@ -21,7 +21,7 @@ Since this is an organization repository, the organization owner or administrato
 6. Click Save
 
 ### Option 2: Check Your Permissions
-- Verify you are a member of the `hsph-bst236-2026` organization
+- Verify you are a member of your GitHub account (nuoding123)
 - Request Administrator access if needed
 - Then follow Option 1
 
@@ -34,9 +34,9 @@ If the web interface is not accessible:
 ## Verification
 
 Once configured, test the deployment at:
-- Homepage: https://hsph-bst236-2026.github.io/homework-1-nuoding123/
-- Game: https://hsph-bst236-2026.github.io/homework-1-nuoding123/game/
-- Papers: https://hsph-bst236-2026.github.io/homework-1-nuoding123/papers/
+- Homepage: https://nuoding123.github.io/
+- Game: https://nuoding123.github.io/game/
+- Papers: https://nuoding123.github.io/papers/
 
 ## Troubleshooting
 
