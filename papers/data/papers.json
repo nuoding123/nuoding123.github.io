@@ -1,0 +1,54 @@
+{
+  "papers": [
+    {
+      "title": "Attention Is All You Need",
+      "authors": "Vaswani, A., Shazeer, N., Parmar, N., et al.",
+      "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks with an encoder-decoder structure. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+      "publishedDate": "2017-06-12",
+      "category": "cs.CL",
+      "arxivId": "1706.03762",
+      "arxivUrl": "https://arxiv.org/abs/1706.03762",
+      "pdfUrl": "https://arxiv.org/pdf/1706.03762.pdf"
+    },
+    {
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "authors": "Devlin, J., Chang, M.-W., Lee, K., Toutanova, K.",
+      "abstract": "We introduce BERT, a new method of pre-training general-purpose language representations from unlabeled text, by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks.",
+      "publishedDate": "2018-10-11",
+      "category": "cs.CL",
+      "arxivId": "1810.04805",
+      "arxivUrl": "https://arxiv.org/abs/1810.04805",
+      "pdfUrl": "https://arxiv.org/pdf/1810.04805.pdf"
+    },
+    {
+      "title": "ImageNet-21K Pretraining for the Masses",
+      "authors": "Ridnik, T., Ben-Baruch, E., Zamir, A., et al.",
+      "abstract": "ImageNet-21K is a large-scale visual database that has been used for pre-training various computer vision models. In this work, we make this dataset more accessible and study how to effectively train models on this dataset.",
+      "publishedDate": "2021-04-16",
+      "category": "cs.CV",
+      "arxivId": "2104.14294",
+      "arxivUrl": "https://arxiv.org/abs/2104.14294",
+      "pdfUrl": "https://arxiv.org/pdf/2104.14294.pdf"
+    },
+    {
+      "title": "Vision Transformers Are Robust Learners",
+      "authors": "Salman, H., Ilyas, A., Engstrom, L., et al.",
+      "abstract": "We study the robustness properties of Vision Transformers (ViTs) and compare them to those of convolutional neural networks (CNNs) on ImageNet and adversarial variants of ImageNet.",
+      "publishedDate": "2022-01-18",
+      "category": "cs.CV",
+      "arxivId": "2105.07581",
+      "arxivUrl": "https://arxiv.org/abs/2105.07581",
+      "pdfUrl": "https://arxiv.org/pdf/2105.07581.pdf"
+    }
+  ],
+  "lastUpdate": "2026-02-18T00:00:00Z",
+  "totalPapers": 4,
+  "source": "arXiv.org",
+  "keywords": [
+    "machine learning",
+    "artificial intelligence",
+    "deep learning",
+    "natural language processing",
+    "computer vision"
+  ]
+}

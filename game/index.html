@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Pac-Man Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">💻 Dev Blog</div>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="./">Pac-Man Game</a></li>
+                <li><a href="../papers/">Papers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="game-container">
+        <div class="game-header">
+            <h1>💘 Valentine's Pac-Man 🌹</h1>
+            <p>Eat dots, avoid ghosts, grab roses for heart power-ups!</p>
+        </div>
+
+        <div class="game-stats">
+            <div class="stat">
+                <span class="label">Score:</span>
+                <span class="value" id="score">0</span>
+            </div>
+            <div class="stat">
+                <span class="label">Lives:</span>
+                <span class="value" id="lives">3</span>
+            </div>
+            <div class="stat">
+                <span class="label">Power-Up:</span>
+                <span class="value" id="powerUpTimer">--</span>
+            </div>
+            <div class="stat">
+                <span class="label">Status:</span>
+                <span class="value" id="gameStatus">Ready</span>
+            </div>
+        </div>
+
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="560" height="560"></canvas>
+        </div>
+
+        <div class="controls">
+            <div class="control-info">
+                <p><strong>Controls:</strong> Arrow Keys or WASD to move</p>
+            </div>
+            <button id="startBtn" class="btn btn-primary">Start Game</button>
+            <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <span class="legend-color pac-man">🟡</span>
+                <span>Pac-Man</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color ghost">👻</span>
+                <span>Ghosts</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color dot">●</span>
+                <span>Dots (Pellets)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color rose">🌹</span>
+                <span>Rose Power-Up</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color heart">💕</span>
+                <span>Heart Projectiles</span>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>Navigate Pac-Man through the maze using arrow keys or WASD</li>
+                <li>Eat all the dots to complete the level</li>
+                <li>Avoid the ghosts - they'll chase you!</li>
+                <li>🌹 Grab the rose to enter power-up mode</li>
+                <li>When powered up, you'll shoot 💕 hearts in your direction</li>
+                <li>Hearts destroy ghosts they hit</li>
+                <li>Power-up lasts for 8 seconds</li>
+                <li>You have 3 lives - don't lose them all!</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/pacman.js"></script>
+</body>
+</html>

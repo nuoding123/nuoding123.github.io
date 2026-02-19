@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest arXiv Papers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/papers.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">💻 Dev Blog</div>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../game/">Pac-Man Game</a></li>
+                <li><a href="./">Papers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="papers-container">
+        <div class="papers-header">
+            <h1>📚 Latest arXiv Papers</h1>
+            <p>Auto-updating feed of the latest research papers (refreshes daily at midnight)</p>
+            <div class="meta-info">
+                <span id="lastUpdate">Last updated: --</span>
+                <span id="paperCount">Total papers: 0</span>
+            </div>
+        </div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="categoryFilter">Filter by Category:</label>
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="cs.AI">AI & Machine Learning</option>
+                    <option value="cs.LG">Learning</option>
+                    <option value="cs.CV">Computer Vision</option>
+                    <option value="cs.NLP">NLP</option>
+                    <option value="cs.DB">Databases</option>
+                    <option value="math.CO">Mathematics</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="papersList" class="papers-grid">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading papers...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nuoding's Coding Blog. All rights reserved.</p>
+        <p>Data sourced from arXiv.org</p>
+    </footer>
+
+    <script src="js/papers.js"></script>
+</body>
+</html>
