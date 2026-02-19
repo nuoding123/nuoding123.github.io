@@ -1,48 +1,88 @@
 {
   "papers": [
     {
-      "title": "Attention Is All You Need",
-      "authors": "Vaswani, A., Shazeer, N., Parmar, N., et al.",
-      "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks with an encoder-decoder structure. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
-      "publishedDate": "2017-06-12",
-      "category": "cs.CL",
-      "arxivId": "1706.03762",
-      "arxivUrl": "https://arxiv.org/abs/1706.03762",
-      "pdfUrl": "https://arxiv.org/pdf/1706.03762.pdf"
+      "title": "Ensemble-size-dependence of deep-learning post-processing methods that minimize an (un)fair score: motivating examples and a proof-of-concept solution",
+      "authors": "Christopher David Roberts",
+      "abstract": "Fair scores reward ensemble forecast members that behave like samples from the same distribution as the verifying observations. They are therefore an attractive choice as loss functions to train data-driven ensemble forecasts or post-processing methods when large training ensembles are either unavailable or computationally prohibitive. The adjusted continuous ranked probability score (aCRPS) is fair and unbiased with respect to ensemble size, provided forecast members are exchangeable and interp",
+      "publishedDate": "2026-02-17T18:59:55Z",
+      "category": "machine learning",
+      "arxivId": "2602.15830v1",
+      "arxivUrl": "https://arxiv.org/abs/2602.15830v1",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15830v1.pdf"
     },
     {
-      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
-      "authors": "Devlin, J., Chang, M.-W., Lee, K., Toutanova, K.",
-      "abstract": "We introduce BERT, a new method of pre-training general-purpose language representations from unlabeled text, by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks.",
-      "publishedDate": "2018-10-11",
-      "category": "cs.CL",
-      "arxivId": "1810.04805",
-      "arxivUrl": "https://arxiv.org/abs/1810.04805",
-      "pdfUrl": "https://arxiv.org/pdf/1810.04805.pdf"
+      "title": "Operationalising the Superficial Alignment Hypothesis via Task Complexity",
+      "authors": "Tom\u00e1s Vergara-Browne, Darshan Patil, Ivan Titov...",
+      "abstract": "The superficial alignment hypothesis (SAH) posits that large language models learn most of their knowledge during pre-training, and that post-training merely surfaces this knowledge. The SAH, however, lacks a precise definition, which has led to (i) different and seemingly orthogonal arguments supporting it, and (ii) important critiques to it. We propose a new metric called task complexity: the length of the shortest program that achieves a target performance on a task. In this framework, the SA",
+      "publishedDate": "2026-02-17T18:59:39Z",
+      "category": "machine learning",
+      "arxivId": "2602.15829v1",
+      "arxivUrl": "https://arxiv.org/abs/2602.15829v1",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15829v1.pdf"
     },
     {
-      "title": "ImageNet-21K Pretraining for the Masses",
-      "authors": "Ridnik, T., Ben-Baruch, E., Zamir, A., et al.",
-      "abstract": "ImageNet-21K is a large-scale visual database that has been used for pre-training various computer vision models. In this work, we make this dataset more accessible and study how to effectively train models on this dataset.",
-      "publishedDate": "2021-04-16",
-      "category": "cs.CV",
-      "arxivId": "2104.14294",
-      "arxivUrl": "https://arxiv.org/abs/2104.14294",
-      "pdfUrl": "https://arxiv.org/pdf/2104.14294.pdf"
+      "title": "Dex4D: Task-Agnostic Point Track Policy for Sim-to-Real Dexterous Manipulation",
+      "authors": "Yuxuan Kuang, Sungjae Park, Katerina Fragkiadaki...",
+      "abstract": "Learning generalist policies capable of accomplishing a plethora of everyday tasks remains an open challenge in dexterous manipulation. In particular, collecting large-scale manipulation data via real-world teleoperation is expensive and difficult to scale. While learning in simulation provides a feasible alternative, designing multiple task-specific environments and rewards for training is similarly challenging. We propose Dex4D, a framework that instead leverages simulation for learning task-a",
+      "publishedDate": "2026-02-17T18:59:31Z",
+      "category": "machine learning",
+      "arxivId": "2602.15828v1",
+      "arxivUrl": "https://arxiv.org/abs/2602.15828v1",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15828v1.pdf"
     },
     {
-      "title": "Vision Transformers Are Robust Learners",
-      "authors": "Salman, H., Ilyas, A., Engstrom, L., et al.",
-      "abstract": "We study the robustness properties of Vision Transformers (ViTs) and compare them to those of convolutional neural networks (CNNs) on ImageNet and adversarial variants of ImageNet.",
-      "publishedDate": "2022-01-18",
-      "category": "cs.CV",
-      "arxivId": "2105.07581",
-      "arxivUrl": "https://arxiv.org/abs/2105.07581",
-      "pdfUrl": "https://arxiv.org/pdf/2105.07581.pdf"
+      "title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
+      "authors": "Zhen Wu, Xiaoyu Huang, Lujie Yang...",
+      "abstract": "While recent advances in humanoid locomotion have achieved stable walking on varied terrains, capturing the agility and adaptivity of highly dynamic human motions remains an open challenge. In particular, agile parkour in complex environments demands not only low-level robustness, but also human-like motion expressiveness, long-horizon skill composition, and perception-driven decision-making. In this paper, we present Perceptive Humanoid Parkour (PHP), a modular framework that enables humanoid r",
+      "publishedDate": "2026-02-17T18:59:11Z",
+      "category": "machine learning",
+      "arxivId": "2602.15827v1",
+      "arxivUrl": "https://arxiv.org/abs/2602.15827v1",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15827v1.pdf"
+    },
+    {
+      "title": "CrispEdit: Low-Curvature Projections for Scalable Non-Destructive LLM Editing",
+      "authors": "Zarif Ikram, Arad Firouzkouhi, Stephen Tu...",
+      "abstract": "A central challenge in large language model (LLM) editing is capability preservation: methods that successfully change targeted behavior can quietly game the editing proxy and corrupt general capabilities, producing degenerate behaviors reminiscent of proxy/reward hacking. We present CrispEdit, a scalable and principled second-order editing algorithm that treats capability preservation as an explicit constraint, unifying and generalizing several existing editing approaches. CrispEdit formulates ",
+      "publishedDate": "2026-02-17T18:58:04Z",
+      "category": "artificial intelligence",
+      "arxivId": "2602.15823v1",
+      "arxivUrl": "https://arxiv.org/abs/2602.15823v1",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15823v1.pdf"
+    },
+    {
+      "title": "VideoSketcher: Video Models Prior Enable Versatile Sequential Sketch Generation",
+      "authors": "Hui Ren, Yuval Alaluf, Omer Bar Tal...",
+      "abstract": "Sketching is inherently a sequential process, in which strokes are drawn in a meaningful order to explore and refine ideas. However, most generative models treat sketches as static images, overlooking the temporal structure that underlies creative drawing. We present a data-efficient approach for sequential sketch generation that adapts pretrained text-to-video diffusion models to generate sketching processes. Our key insight is that large language models and video diffusion models offer complem",
+      "publishedDate": "2026-02-17T18:55:03Z",
+      "category": "natural language processing",
+      "arxivId": "2602.15819v1",
+      "arxivUrl": "https://arxiv.org/abs/2602.15819v1",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15819v1.pdf"
+    },
+    {
+      "title": "Developing AI Agents with Simulated Data: Why, what, and how?",
+      "authors": "Xiaoran Liu, Istvan David",
+      "abstract": "As insufficient data volume and quality remain the key impediments to the adoption of modern subsymbolic AI, techniques of synthetic data generation are in high demand. Simulation offers an apt, systematic approach to generating diverse synthetic data. This chapter introduces the reader to the key concepts, benefits, and challenges of simulation-based synthetic data generation for AI training purposes, and to a reference framework to describe, design, and analyze digital twin-based AI simulation",
+      "publishedDate": "2026-02-17T18:53:27Z",
+      "category": "artificial intelligence",
+      "arxivId": "2602.15816v1",
+      "arxivUrl": "https://arxiv.org/abs/2602.15816v1",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15816v1.pdf"
+    },
+    {
+      "title": "Avey-B",
+      "authors": "Devang Acharya, Mohammad Hammoud",
+      "abstract": "Compact pretrained bidirectional encoders remain the backbone of industrial NLP under tight compute and memory budgets. Their effectiveness stems from self-attention's ability to deliver high-quality bidirectional contextualization with sequence-level parallelism, as popularized by BERT-style architectures. Recently, Avey was introduced as an autoregressive, attention-free alternative that naturally admits an encoder-only adaptation. In this paper, we reformulate Avey for the encoder-only paradi",
+      "publishedDate": "2026-02-17T18:50:40Z",
+      "category": "artificial intelligence",
+      "arxivId": "2602.15814v1",
+      "arxivUrl": "https://arxiv.org/abs/2602.15814v1",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15814v1.pdf"
     }
   ],
-  "lastUpdate": "2026-02-18T00:00:00Z",
-  "totalPapers": 4,
+  "lastUpdate": "2026-02-18T20:38:53.624419",
+  "totalPapers": 8,
   "source": "arXiv.org",
   "keywords": [
     "machine learning",

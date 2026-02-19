@@ -229,11 +229,12 @@ class PacManGame {
         this.score = 0;
         this.lives = 3;
         this.state = GAME_STATE.IDLE;
-        this.dots = new Set();
-        this.hearts = [];
+        this.dots = new Set();  // 基础豆子 (pellets)
+        this.hearts = [];       // 心形投射物
         this.roseSpawnTime = 0;
-        this.rose = null;
+        this.rose = null;       // 玫瑰能量豆
         this.heartShootCounter = 0;
+        this.totalInitialDots = 0;  // 记录初始豆子数量
 
         // Initialize game
         this.initializeDots();
@@ -250,16 +251,18 @@ class PacManGame {
     }
 
     initializeDots() {
+        // 在所有路径上放置豆子（pellets），Pac-Man 需要吃掉它们
         this.dots.clear();
         for (let row = 1; row < ROWS - 1; row++) {
             for (let col = 1; col < COLS - 1; col++) {
                 if (!this.maze.isWall(col, row)) {
-                    if (Math.random() > 0.15) { // 85% chance of dot
+                    if (Math.random() > 0.15) { // 85% 的路径上放置豆子
                         this.dots.add(`${col},${row}`);
                     }
                 }
             }
         }
+        this.totalInitialDots = this.dots.size;
     }
 
     setupEventListeners() {
@@ -316,6 +319,7 @@ class PacManGame {
         this.score = 0;
         this.lives = 3;
         this.initializeDots();
+        this.totalInitialDots = this.dots.size;  // 记录初始豆子数
         this.pacMan = new PacMan(7, 7);
         this.ghosts.forEach((g, i) => {
             const startPositions = [[5, 5], [8, 5], [5, 9], [8, 9]];
@@ -367,7 +371,7 @@ class PacManGame {
         // Check collisions
         this.checkCollisions();
 
-        // Check win condition
+        // Check win condition: all pellets eaten
         if (this.dots.size === 0) {
             this.state = GAME_STATE.LEVEL_COMPLETE;
             this.updateUI();
@@ -384,21 +388,21 @@ class PacManGame {
     }
 
     checkCollisions() {
-        // Eat dots
+        // 豆子碰撞：Pac-Man 吃豆子得分
         const dotKey = `${this.pacMan.x},${this.pacMan.y}`;
         if (this.dots.has(dotKey)) {
             this.dots.delete(dotKey);
             this.score += PELLET_POINTS;
         }
 
-        // Eat rose
+        // 玫瑰碰撞：Pac-Man 吃玫瑰激活能力，可以射心消灭幽灵
         if (this.rose && this.pacMan.x === this.rose.x && this.pacMan.y === this.rose.y) {
             this.pacMan.activatePowerUp();
             this.score += ROSE_POINTS;
             this.rose = null;
         }
 
-        // Hearts hit ghosts
+        // 心形投射物碰撞：心形消灭幽灵
         this.hearts.forEach((heart, hIdx) => {
             this.ghosts.forEach((ghost, gIdx) => {
                 if (ghost.isAlive && heart.x === ghost.x && heart.y === ghost.y) {
@@ -409,11 +413,12 @@ class PacManGame {
             });
         });
 
-        // Pac-Man hit by ghost
+        // 幽灵碰撞：幽灵接触 Pac-Man，Pac-Man 失去生命
         this.ghosts.forEach(ghost => {
             if (ghost.isAlive && this.pacMan.x === ghost.x && this.pacMan.y === ghost.y) {
                 this.lives--;
                 if (this.lives > 0) {
+                    // 重置位置重试
                     this.pacMan = new PacMan(7, 7);
                     this.ghosts.forEach((g, i) => {
                         const startPositions = [[5, 5], [8, 5], [5, 9], [8, 9]];
@@ -421,6 +426,7 @@ class PacManGame {
                     });
                     this.hearts = [];
                 }
+                // 当生命 = 0 时，游戏结束
             }
         });
     }
